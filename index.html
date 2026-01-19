@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Bibek Ghimire</title>
+    <meta name="description" content="Bibek Ghimire is full stack developer." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/skill.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/sidebar.css" />
+  </head>
+  <body>
+    <nav class="sidebar">
+      <i id="hamburger" class="fa-solid fa-bars sidebar_hamburger"></i>
+      <div class="sidebar_content">
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section id="hero">
+      <h1>
+        Hi! <br />I am Bibek <br />
+        I am a Developer
+      </h1>
+      <p>Electronics, Communication & Information Engineer</p>
+      <button>Contact Me <i class="fa-solid fa-envelope"></i></button>
+    </section>
+    <section id="about" class="section">
+      <p class="section_title">About Me</p>
+      <p class="section_subtitle">Who am I?</p>
+      <p class="about_description">
+        <strong> Hi, I am Bibek. </strong>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod id culpa
+        fuga nisi accusamus, voluptate, nam aliquid reprehenderit voluptatibus,
+        eaque beatae dolorum deleniti laboriosam assumenda voluptatum corrupti
+        non tempore dolores.
+      </p>
+      <div class="about_skills">
+        <div>
+          <i class="fa-solid fa-ear-listen"></i>
+          <h3>Web Development</h3>
+        </div>
+        <div>
+          <i class="fa-solid fa-globe"></i>
+          <h3>Web Design</h3>
+        </div>
+        <div>
+          <i class="fa-solid fa-database"></i>
+          <h3>Machine Learning</h3>
+        </div>
+        <div>
+          <i class="fa-solid fa-mobile"></i>
+          <h3>Mobile Application</h3>
+        </div>
+      </div>
+    </section>
+    <section id="skills" class="section">
+      <p class="section_title">My Speciality</p>
+      <p class="section_subtitle">My Skills</p>
+
+      <div class="outer_box">
+        <div class="skill_box">
+          <p>HTML</p>
+          <div class="skill_grey_box">
+            <div class="skill_color_box">
+              <span>88%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill_box">
+          <p>CSS</p>
+          <div class="skill_grey_box">
+            <div
+              class="skill_color_box"
+              style="color: red; background: red; width: 68%"
+            >
+              <span>68%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill_box">
+          <p>JavaScript</p>
+          <div class="skill_grey_box">
+            <div
+              class="skill_color_box style="
+              style="color: blue; background: blue; width: 88%"
+            >
+              <span>88%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill_box">
+          <p>React.js</p>
+          <div class="skill_grey_box">
+            <div
+              class="skill_color_box"
+              style="color: purple; background: purple; width: 75%"
+            >
+              <span>75%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill_box">
+          <p>Python</p>
+          <div class="skill_grey_box">
+            <div
+              class="skill_color_box"
+              style="color: green; background: green; width: 98%"
+            >
+              <span>98%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill_box">
+          <p>js</p>
+          <div class="skill_grey_box">
+            <div
+              class="skill_color_box"
+              style="color: gold; background: gold; width: 68%"
+            >
+              <span>68%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      const hamburger = document.querySelector("#hamburger");
+      hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("sidebar_hamburger_translate");
+      });
+    </script>
+  </body>
+</html>
