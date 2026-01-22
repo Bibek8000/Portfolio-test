@@ -20,12 +20,12 @@
   text-transform: capitalize;
   color: black;
 }
-@media screen and (min_width: 768px) {
+/* @media screen and (min_width: 768px) {
   .about_skills {
     display: flex;
     gap: 30px;
   }
-}
+} */
 
 .about_skills > div:nth-child(2) {
   border-bottom: 2px solid green;
@@ -38,4 +38,16 @@
 .about_skills > div:nth-child(4) {
   border-bottom: 2px solid black;
   color: black;
+}
+/* ....... */
+/* ....... */
+@media screen and (min-width: 768px) {
+  .about_skills {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  .about_box {
+    flex-grow: 1;
+  }
 }

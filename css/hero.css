@@ -5,8 +5,8 @@
   height: 100vh;
   align-items: start;
   padding: 30px;
-  background-image: url("/image/photo.jpg");
-  /* background-image: url(/b.jpg); */
+  /* background-image: url("/image/photo.jpg"); */
+  background-image: url("/bi.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right bottom;

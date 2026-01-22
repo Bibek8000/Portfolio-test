@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -19,12 +19,19 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="css/hero.css" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/skill.css" />
     <link rel="stylesheet" href="css/about.css" />
     <link rel="stylesheet" href="css/sidebar.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/footer.css" />
   </head>
   <body>
     <nav class="sidebar">
@@ -50,10 +57,18 @@
       <p class="section_subtitle">Who am I?</p>
       <p class="about_description">
         <strong> Hi, I am Bibek. </strong>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod id culpa
-        fuga nisi accusamus, voluptate, nam aliquid reprehenderit voluptatibus,
-        eaque beatae dolorum deleniti laboriosam assumenda voluptatum corrupti
-        non tempore dolores.
+        a Bachelor’s student in Electronics, Communication, and Information
+        Engineering with a strong passion for building innovative technology
+        solutions. I specialize in full-stack development, embedded systems, and
+        web and mobile application development, blending hardware and software
+        to create impactful, real-world products. I’m deeply interested in IoT,
+        machine learning, and cutting-edge technologies, and I enjoy exploring
+        how intelligent systems can solve complex problems efficiently. Whether
+        it’s developing scalable applications, designing embedded solutions, or
+        experimenting with emerging tech, I’m driven by curiosity, creativity,
+        and continuous learning. My goal is to leverage modern technology to
+        build meaningful, reliable, and future-ready solutions that make a
+        difference.
       </p>
       <div class="about_skills">
         <div>
@@ -144,10 +159,84 @@
         </div>
       </div>
     </section>
+    <section id="contact" class="section">
+      <span class="section_title">get in touch</span>
+      <h2 class="section_subtitle">contact</h2>
+
+      <form
+        action=""
+        id="contactForm"
+        class="contact__form"
+        onsubmit="submitForm(event)"
+      >
+        <input
+          type="text"
+          placeholder="Name"
+          id="name"
+          name="name"
+          class="contact__input"
+        />
+        <textarea
+          id="message"
+          class="contact__textarea"
+          name="message"
+          placeholder="Message"
+          rows="4"
+        ></textarea>
+        <button class="contact__button" type="submit">Send Message</button>
+      </form>
+    </section>
+    <!-- Font Awesome CDN (place in <head>) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <footer class="footer">
+      <div class="footer__container">
+        <p class="footer__text">© 2026 Bibek Ghimire. All rights reserved.</p>
+
+        <div class="footer__socials">
+          <a
+            href="https://www.facebook.com/bibek.ghimire.315080"
+            target="_blank"
+            class="footer__icon"
+            aria-label="Facebook"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+
+          <a
+            href="https://linkedin.com/"
+            target="_blank"
+            class="footer__icon"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+
+          <a
+            href="https://github.com/Bibek8000"
+            target="_blank"
+            class="footer__icon"
+            aria-label="GitHub"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
     <script>
       const hamburger = document.querySelector("#hamburger");
       hamburger.addEventListener("click", () => {
         hamburger.classList.toggle("sidebar_hamburger_translate");
+      });
+      // Footer social icon click animation or logging
+      document.querySelectorAll(".footer__icon").forEach((icon) => {
+        icon.addEventListener("click", () => {
+          console.log("Social icon clicked");
+        });
       });
     </script>
   </body>
